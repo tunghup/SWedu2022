@@ -1,0 +1,315 @@
+
+public class Calendar {
+
+	public static void main(String[] args) {
+		String[] MonthName = {"January", "February", "March", "April", "May", "June",
+								"July", "August", "September", "October", "November", "December"};
+		
+		System.out.println("\nNumber of days for each month:");
+		int MonthCount = 1;
+		while (MonthCount <= 12) {
+			switch (MonthCount) {
+			case 1:
+			case 3:
+			case 5:
+			case 7:
+			case 8:
+			case 10:
+			case 12:
+				System.out.println("There are 31 days in " + MonthName[MonthCount -1] + ", 2022");
+				break;
+			case 2: 
+				System.out.println("There are 28 days in " + MonthName[MonthCount -1] + ", 2022");
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+				System.out.println("There are 30 days in " + MonthName[MonthCount -1] + ", 2022");
+				break;
+			default:
+				System.out.println("Invalid month number");
+			}
+			MonthCount++;
+		}
+		
+		System.out.println("\n2022 Calendar:");
+		
+		System.out.println("\nJanuary:");
+			int LeftOff1 = 5; 
+			boolean printing1 = false;
+			int DayCount1 = 1;
+			System.out.println("Sun Mon Tue Wed Thu Fri Sat");
+			for (int LinesOfMonth=0; LinesOfMonth<6; LinesOfMonth++) {
+				for (int DaysOfWeek=0; DaysOfWeek<7; DaysOfWeek++) {
+					if (printing1 == false) {
+						System.out.print("    ");
+						if (DaysOfWeek == LeftOff1) {
+							printing1 = true;
+						}
+					} else if (DayCount1 < 10) {
+						System.out.print(DayCount1 + "   ");
+						DayCount1++;
+					} else if (DayCount1 < 32) {
+						System.out.print(DayCount1 + "  ");
+						DayCount1++;
+					}
+				}
+				System.out.println();
+			}
+			
+			System.out.println("\nFebruary:");
+			int LeftOff2 = 1; 
+			boolean printing2 = false;
+			int DayCount2 = 1;
+			System.out.println("Sun Mon Tue Wed Thu Fri Sat");
+			for (int LinesOfMonth=0; LinesOfMonth<6; LinesOfMonth++) {
+				for (int DaysOfWeek=0; DaysOfWeek<7; DaysOfWeek++) {
+					if (printing2 == false) {
+						System.out.print("    ");
+						if (DaysOfWeek == LeftOff2) {
+							printing2 = true;
+						}
+					} else if (DayCount2 < 10) {
+						System.out.print(DayCount2 + "   ");
+						DayCount2++;
+					} else if (DayCount2 < 29) {
+						System.out.print(DayCount2 + "  ");
+						DayCount2++;
+					}
+				}
+				System.out.println();
+			}			
+
+			System.out.println("\nMarch:");
+			int LeftOff3 = 1; 
+			boolean printing3 = false;
+			int DayCount3 = 1;
+			System.out.println("Sun Mon Tue Wed Thu Fri Sat");
+			for (int LinesOfMonth=0; LinesOfMonth<6; LinesOfMonth++) {
+				for (int DaysOfWeek=0; DaysOfWeek<7; DaysOfWeek++) {
+					if (printing3 == false) {
+						System.out.print("    ");
+						if (DaysOfWeek == LeftOff3) {
+							printing3 = true;
+						}
+					} else if (DayCount3 < 10) {
+						System.out.print(DayCount3 + "   ");
+						DayCount3++;
+					} else if (DayCount3 < 32) {
+						System.out.print(DayCount3 + "  ");
+						DayCount3++;
+					}
+				}
+				System.out.println();
+			}
+
+			System.out.println("\nApril:");
+			int LeftOff4 = 4; 
+			boolean printing4 = false;
+			int DayCount4 = 1;
+			System.out.println("Sun Mon Tue Wed Thu Fri Sat");
+			for (int LinesOfMonth=0; LinesOfMonth<6; LinesOfMonth++) {
+				for (int DaysOfWeek=0; DaysOfWeek<7; DaysOfWeek++) {
+					if (printing4 == false) {
+						System.out.print("    ");
+						if (DaysOfWeek == LeftOff4) {
+							printing4 = true;
+						}
+					} else if (DayCount4 < 10) {
+						System.out.print(DayCount4 + "   ");
+						DayCount4++;
+					} else if (DayCount4 < 31) {
+						System.out.print(DayCount4 + "  ");
+						DayCount4++;
+					}
+				}
+				System.out.println();
+			}
+			
+			System.out.println("\nMay:");
+			int LeftOff5 = 0; 
+			boolean printing5 = true;
+			int DayCount5 = 1;
+			System.out.println("Sun Mon Tue Wed Thu Fri Sat");
+			for (int LinesOfMonth=0; LinesOfMonth<6; LinesOfMonth++) {
+				for (int DaysOfWeek=0; DaysOfWeek<7; DaysOfWeek++) {
+					if (printing5 == false) {
+						System.out.print("    ");
+						if (DaysOfWeek == LeftOff5) {
+							printing5 = true;
+						}
+					} else if (DayCount5 < 10) {
+						System.out.print(DayCount5 + "   ");
+						DayCount5++;
+					} else if (DayCount5 < 32) {
+						System.out.print(DayCount5 + "  ");
+						DayCount5++;
+					}
+				}
+				System.out.println();
+			}			
+
+			System.out.println("\nJune:");
+			int LeftOff6 = 2; 
+			boolean printing6 = false;
+			int DayCount6 = 1;
+			System.out.println("Sun Mon Tue Wed Thu Fri Sat");
+			for (int LinesOfMonth=0; LinesOfMonth<6; LinesOfMonth++) {
+				for (int DaysOfWeek=0; DaysOfWeek<7; DaysOfWeek++) {
+					if (printing6 == false) {
+						System.out.print("    ");
+						if (DaysOfWeek == LeftOff6) {
+							printing6 = true;
+						}
+					} else if (DayCount6 < 10) {
+						System.out.print(DayCount6 + "   ");
+						DayCount6++;
+					} else if (DayCount6 < 31) {
+						System.out.print(DayCount6 + "  ");
+						DayCount6++;
+					}
+				}
+				System.out.println();
+			}
+			
+			System.out.println("\nJuly:");
+			int LeftOff7 = 4; 
+			boolean printing7 = false;
+			int DayCount7 = 1;
+			System.out.println("Sun Mon Tue Wed Thu Fri Sat");
+			for (int LinesOfMonth=0; LinesOfMonth<6; LinesOfMonth++) {
+				for (int DaysOfWeek=0; DaysOfWeek<7; DaysOfWeek++) {
+					if (printing7 == false) {
+						System.out.print("    ");
+						if (DaysOfWeek == LeftOff7) {
+							printing7 = true;
+						}
+					} else if (DayCount7 < 10) {
+						System.out.print(DayCount7 + "   ");
+						DayCount7++;
+					} else if (DayCount7 < 32) {
+						System.out.print(DayCount7 + "  ");
+						DayCount7++;
+					}
+				}
+				System.out.println();
+			}
+			
+			System.out.println("\nAugust:");
+			int LeftOff8 = 0; 
+			boolean printing8 = false;
+			int DayCount8 = 1;
+			System.out.println("Sun Mon Tue Wed Thu Fri Sat");
+			for (int LinesOfMonth=0; LinesOfMonth<6; LinesOfMonth++) {
+				for (int DaysOfWeek=0; DaysOfWeek<7; DaysOfWeek++) {
+					if (printing8 == false) {
+						System.out.print("    ");
+						if (DaysOfWeek == LeftOff8) {
+							printing8 = true;
+						}
+					} else if (DayCount8 < 10) {
+						System.out.print(DayCount8 + "   ");
+						DayCount8++;
+					} else if (DayCount8 < 32) {
+						System.out.print(DayCount8 + "  ");
+						DayCount8++;
+					}
+				}
+				System.out.println();
+			}
+			
+			System.out.println("\nSeptember:");
+			int LeftOff9 = 3; 
+			boolean printing9 = false;
+			int DayCount9 = 1;
+			System.out.println("Sun Mon Tue Wed Thu Fri Sat");
+			for (int LinesOfMonth=0; LinesOfMonth<6; LinesOfMonth++) {
+				for (int DaysOfWeek=0; DaysOfWeek<7; DaysOfWeek++) {
+					if (printing9 == false) {
+						System.out.print("    ");
+						if (DaysOfWeek == LeftOff9) {
+							printing9 = true;
+						}
+					} else if (DayCount9 < 10) {
+						System.out.print(DayCount9 + "   ");
+						DayCount9++;
+					} else if (DayCount9 < 31) {
+						System.out.print(DayCount9 + "  ");
+						DayCount9++;
+					}
+				}
+				System.out.println();
+			}
+			
+			System.out.println("\nOctober:");
+			int LeftOff10 = 5; 
+			boolean printing10 = false;
+			int DayCount10 = 1;
+			System.out.println("Sun Mon Tue Wed Thu Fri Sat");
+			for (int LinesOfMonth=0; LinesOfMonth<6; LinesOfMonth++) {
+				for (int DaysOfWeek=0; DaysOfWeek<7; DaysOfWeek++) {
+					if (printing10 == false) {
+						System.out.print("    ");
+						if (DaysOfWeek == LeftOff10) {
+							printing10 = true;
+						}
+					} else if (DayCount10 < 10) {
+						System.out.print(DayCount10 + "   ");
+						DayCount10++;
+					} else if (DayCount10 < 32) {
+						System.out.print(DayCount10 + "  ");
+						DayCount10++;
+					}
+				}
+				System.out.println();
+			}
+			
+			System.out.println("\nNovember:");
+			int LeftOff11 = 1; 
+			boolean printing11 = false;
+			int DayCount11 = 1;
+			System.out.println("Sun Mon Tue Wed Thu Fri Sat");
+			for (int LinesOfMonth=0; LinesOfMonth<6; LinesOfMonth++) {
+				for (int DaysOfWeek=0; DaysOfWeek<7; DaysOfWeek++) {
+					if (printing11 == false) {
+						System.out.print("    ");
+						if (DaysOfWeek == LeftOff11) {
+							printing11 = true;
+						}
+					} else if (DayCount11 < 10) {
+						System.out.print(DayCount11 + "   ");
+						DayCount11++;
+					} else if (DayCount11 < 31) {
+						System.out.print(DayCount11 + "  ");
+						DayCount11++;
+					}
+				}
+				System.out.println();
+			}
+			
+			System.out.println("\nDecember:");
+			int LeftOff12 = 3; 
+			boolean printing12 = false;
+			int DayCount12 = 1;
+			System.out.println("Sun Mon Tue Wed Thu Fri Sat");
+			for (int LinesOfMonth=0; LinesOfMonth<6; LinesOfMonth++) {
+				for (int DaysOfWeek=0; DaysOfWeek<7; DaysOfWeek++) {
+					if (printing12 == false) {
+						System.out.print("    ");
+						if (DaysOfWeek == LeftOff12) {
+							printing12 = true;
+						}
+					} else if (DayCount12 < 10) {
+						System.out.print(DayCount12 + "   ");
+						DayCount12++;
+					} else if (DayCount12 < 32) {
+						System.out.print(DayCount12 + "  ");
+						DayCount12++;
+					}
+				}
+				System.out.println();
+			}
+			
+	}
+
+}
